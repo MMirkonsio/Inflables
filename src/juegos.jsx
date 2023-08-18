@@ -115,7 +115,7 @@ return(
           
           <div className="p-5">
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-700">Juegos Inflables Pequeños</h5>
-            <p className="mb-3 text-2xl font-semibold text-gray-700">Arriendo: $50.000 c/u</p>
+            <p className="mb-3 text-2xl font-semibold text-gray-700">Arriendo: $30.000 c/u</p>
           </div>
       </div>
 
