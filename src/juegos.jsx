@@ -49,7 +49,7 @@ return(
         
         <div className="p-5">
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-700">Toro Mecánico</h5>
-          <p className="mb-3 text-2xl font-semibold  text-gray-700">Arriendo: $100.000</p>
+          <p className="mb-3 text-2xl font-semibold  text-gray-700">Arriendo: $120.000</p>
         </div>
       </div>
 
@@ -115,7 +115,7 @@ return(
           
           <div className="p-5">
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-700">Juegos Inflables Pequeños</h5>
-            <p className="mb-3 text-2xl font-semibold text-gray-700">Arriendo: $25.000 c/u</p>
+            <p className="mb-3 text-2xl font-semibold text-gray-700">Arriendo: $50.000 c/u</p>
           </div>
       </div>
 
@@ -155,7 +155,7 @@ return(
           
           <div className="p-5">
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-700">Juego Inflable La Ola</h5>
-            <p className="mb-3 text-2xl font-semibold text-gray-700 ">Arriendo: $45.000</p>
+            <p className="mb-3 text-2xl font-semibold text-gray-700 ">Arriendo: $60.000</p>
           </div>
       </div>
 
@@ -188,7 +188,7 @@ return(
           
           <div className="p-5">
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-700">Juego Inflable El Tiburon</h5>
-            <p className="mb-3 text-2xl font-semibold text-gray-700">Arriendo: $45.000</p>
+            <p className="mb-3 text-2xl font-semibold text-gray-700">Arriendo: $60.000</p>
           </div>
       </div>
 
@@ -221,7 +221,7 @@ return(
           
           <div className="p-5">
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-700">Juego Inflable El Barco</h5>
-            <p className="mb-3 text-2xl font-semibold text-gray-700">Arriendo: $45.000</p>
+            <p className="mb-3 text-2xl font-semibold text-gray-700">Arriendo: $55.000</p>
           </div>
       </div>
 
@@ -247,7 +247,7 @@ return(
           
           <div className="p-5">
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-700">Juego Inflable El Avión</h5>
-            <p className="mb-3 text-2xl font-semibold text-gray-700">Arriendo: $45.000</p>
+            <p className="mb-3 text-2xl font-semibold text-gray-700">Arriendo: $55.000</p>
           </div>
       </div>
 
@@ -273,7 +273,7 @@ return(
           
           <div className="p-5">
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-700">Juego Inflable El Castillo</h5>
-            <p className="mb-3 text-2xl font-semibold text-gray-700">Arriendo: $45.000</p>
+            <p className="mb-3 text-2xl font-semibold text-gray-700">Arriendo: $50.000</p>
           </div>
       </div>
 
@@ -305,8 +305,8 @@ return(
         
           
           <div className="p-5">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-700">Juego Inflable Arco</h5>
-            <p className="mb-3 text-2xl font-semibold text-gray-700">Arriendo: $45.000</p>
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-700">Juego Inflable Aro</h5>
+            <p className="mb-3 text-2xl font-semibold text-gray-700">Arriendo: $55.000</p>
           </div>
       </div>
 
@@ -329,7 +329,7 @@ return(
         </Swiper>
           <div className="p-5">
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-700">Juego Inflable Arabe</h5>
-            <p className="mb-3 text-2xl font-semibold text-gray-700">Arriendo: $45.000</p>
+            <p className="mb-3 text-2xl font-semibold text-gray-700">Arriendo: $50.000</p>
           </div>
       </div>
       {modalImage && (
