@@ -31,16 +31,16 @@ return(
           className="mySwiper">
         <SwiperSlide>
             <img
-              src="/img/2.jpg"
+              src="/img/2.webp"
               alt="Juego Inflable"
-              onClick={() => openModal('/img/2.jpg')}
+              onClick={() => openModal('/img/2.webp')}
             />
           </SwiperSlide>
         <SwiperSlide>
             <img
-              src="/img/2.1.jpg"
+              src="/img/2.1.webp"
               alt="Juego Inflable"
-              onClick={() => openModal('/img/2.1.jpg')}
+              onClick={() => openModal('/img/2.1.webp')}
             />
           </SwiperSlide>
             
@@ -64,16 +64,16 @@ return(
           className="mySwiper">
         <SwiperSlide>
             <img
-              src="/img/3.jpg"
+              src="/img/3.webp"
               alt="Juego Inflable"
-              onClick={() => openModal('/img/3.jpg')}
+              onClick={() => openModal('/img/3.webp')}
             />
           </SwiperSlide>
         <SwiperSlide>
             <img
-              src="/img/3.1.jpg"
+              src="/img/3.1.webp"
               alt="Juego Inflable"
-              onClick={() => openModal('/img/3.1.jpg')}
+              onClick={() => openModal('/img/3.1.webp')}
             />
           </SwiperSlide>
             
@@ -97,16 +97,16 @@ return(
           className="mySwiper">
         <SwiperSlide>
             <img
-              src="/img/4.jpg"
+              src="/img/4.webp"
               alt="Juego Inflable"
-              onClick={() => openModal('/img/4.jpg')}
+              onClick={() => openModal('/img/4.webp')}
             />
           </SwiperSlide>
         <SwiperSlide>
             <img
-              src="/img/4.1.jpg"
+              src="/img/4.1.webp"
               alt="Juego Inflable"
-              onClick={() => openModal('/img/4.1.jpg')}
+              onClick={() => openModal('/img/4.1.webp')}
             />
           </SwiperSlide>
             
@@ -130,23 +130,23 @@ return(
           className="mySwiper">
         <SwiperSlide>
             <img
-              src="/img/5.jpg"
+              src="/img/5.webp"
               alt="Juego Inflable"
-              onClick={() => openModal('/img/5.jpg')}
+              onClick={() => openModal('/img/5.webp')}
             />
           </SwiperSlide>
         <SwiperSlide>
             <img
-              src="/img/5.1.jpg"
+              src="/img/5.1.webp"
               alt="Juego Inflable"
-              onClick={() => openModal('/img/5.1.jpg')}
+              onClick={() => openModal('/img/5.1.webp')}
             />
           </SwiperSlide>
         <SwiperSlide>
           <img
-            src="/img/5.2.jpg"
+            src="/img/5.2.webp"
             alt="Juego Inflable"
-            onClick={() => openModal('/img/5.2.jpg')}
+            onClick={() => openModal('/img/5.2.webp')}
           />
         </SwiperSlide>
             
@@ -170,16 +170,16 @@ return(
           className="mySwiper">
         <SwiperSlide>
             <img
-              src="/img/6.jpg"
+              src="/img/6.webp"
               alt="Juego Inflable"
-              onClick={() => openModal('/img/6.jpg')}
+              onClick={() => openModal('/img/6.webp')}
             />
           </SwiperSlide>
         <SwiperSlide>
             <img
-              src="/img/6.1.jpg"
+              src="/img/6.1.webp"
               alt="Juego Inflable"
-              onClick={() => openModal('/img/6.1.jpg')}
+              onClick={() => openModal('/img/6.1.webp')}
             />
           </SwiperSlide>
             
@@ -203,16 +203,16 @@ return(
           className="mySwiper">
         <SwiperSlide>
             <img
-              src="/img/7.jpg"
+              src="/img/7.webp"
               alt="Juego Inflable"
-              onClick={() => openModal('/img/7.jpg')}
+              onClick={() => openModal('/img/7.webp')}
             />
           </SwiperSlide>
         <SwiperSlide>
             <img
-              src="/img/7.1.jpg"
+              src="/img/7.1.webp"
               alt="Juego Inflable"
-              onClick={() => openModal('/img/7.1.jpg')}
+              onClick={() => openModal('/img/7.1.webp')}
             />
           </SwiperSlide>
             
@@ -236,9 +236,9 @@ return(
           className="mySwiper">
         <SwiperSlide>
             <img
-              src="/img/8.jpg"
+              src="/img/8.webp"
               alt="Juego Inflable"
-              onClick={() => openModal('/img/8.jpg')}
+              onClick={() => openModal('/img/8.webp')}
             />
           </SwiperSlide>
             
@@ -262,9 +262,9 @@ return(
             className="mySwiper">
             <SwiperSlide>
                 <img
-                src="/img/9.jpg"
+                src="/img/9.webp"
                 alt="Juego Inflable"
-                onClick={() => openModal('/img/9.jpg')}
+                onClick={() => openModal('/img/9.webp')}
                 />
             </SwiperSlide>
                 
@@ -288,16 +288,16 @@ return(
           className="mySwiper">
         <SwiperSlide>
             <img
-              src="/img/10.jpg"
+              src="/img/10.webp"
               alt="Juego Inflable"
-              onClick={() => openModal('/img/10.jpg')}
+              onClick={() => openModal('/img/10.webp')}
             />
           </SwiperSlide>
         <SwiperSlide>
             <img
-              src="/img/10.1.jpg"
+              src="/img/10.1.webp"
               alt="Juego Inflable"
-              onClick={() => openModal('/img/10.1.jpg')}
+              onClick={() => openModal('/img/10.1.webp')}
             />
           </SwiperSlide>
             
