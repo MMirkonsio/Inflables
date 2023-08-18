@@ -69,7 +69,7 @@ function App() {
           <p className='text-center'>ARRIENDO DE JUEGOS INFLABLES</p><p className='text-center text-purple-600'>Darinka Vlatko</p>
         </h1>
           <div className="flex items-center justify-center">
-            <img src="/img/logo.png" alt="niños" className="h-full" />
+            <img src="/img/logo.webp" alt="niños" className="h-full" />
           </div>
           <p className="mb-6 text-lg font-semibold lg:text-xl sm:px-16 xl:px-48 text-gray-200">Solo en Ciudad de Tocopilla.</p>
           
