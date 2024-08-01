@@ -28,15 +28,17 @@ function App() {
           className="flex flex-col items-center justify-center h-screen"
         >
           {/* Titulo */}
-          <h1 className="mb-4 text-6xl font-extrabold leading-none tracking-tight md:text-5xl lg:text-6xl text-gray-100">
-            <p className="text-center">ARRIENDO DE</p>
-            <p className="text-center">JUEGOS INFLABLES</p>
-            <p className="text-center text-purple-600">DARINKA VLATKO</p>
+          <h1 className="mb-4 font-extrabold leading-none tracking-tight text-6xl text-gray-100">
+            <p className="text-center">ARRIENDO</p>
+            <p className="text-center">DE JUEGOS</p>
+            <p className="text-center">INFLABLES</p>
+            <p className="text-center text-7xl text-red-500">DARINKA</p>
+            <p className="text-center text-7xl text-red-500">VLATKO</p>
           </h1>
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center mb-4">
             <img src="/img/logo.webp" alt="niños" className="h-full" />
           </div>
-          <p className="mb-6 text-lg font-semibold lg:text-xl sm:px-16 xl:px-48 text-gray-200">
+          <p className="mb-4 text-lg font-semibold lg:text-xl sm:px-16 xl:px-48 text-gray-200">
             Solo en Ciudad de Tocopilla.
           </p>
           <Contacto />
