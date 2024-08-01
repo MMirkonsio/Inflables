@@ -1,44 +1,10 @@
-import { useState, useEffect } from "react";
 import "./styles.css";
 import Juegos from "./juegos";
 import Contacto from "./contacto";
 
 function App() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [navbarBackgroundActive, setNavbarBackgroundActive] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 100) {
-        setNavbarBackgroundActive(true);
-      } else {
-        setNavbarBackgroundActive(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
     <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-      <div className="navbar-container">
-        <div className={`Navbar ${navbarBackgroundActive ? "active" : ""}`}>
-          <div className={`nav-items ${isOpen && "open"}`}>
-            <a href="#inicio">Inicio</a>
-            <a href="#servicios">Servicios</a>
-          </div>
-          <div
-            className={`nav-toggle ${isOpen && "open"}`}
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            <div className="bar"></div>
-          </div>
-        </div>
-      </div>
       <div className="background">
         <span></span>
         <span></span>
