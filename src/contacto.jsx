@@ -1,5 +1,4 @@
 function Contacto(){
-
     return(
         <div className="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
             <a href="https://wa.me/56952760026" className="w-full sm:w-auto focus:ring-4 focus:outline-none text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 bg-green-600 hover:bg-green-800 focus:ring-gray-700">

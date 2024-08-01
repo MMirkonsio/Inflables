@@ -5,349 +5,392 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Pagination, Navigation } from 'swiper/modules';
-    
-    
-function Juegos(){
-    const [modalImage, setModalImage] = useState(null);
 
-    const openModal = (imageSrc) => {
-      setModalImage(imageSrc);
-    };
-  
-    const closeModal = () => {
-      setModalImage(null);
-    };
+function Juegos() {
+  const [modalImage, setModalImage] = useState(null);
 
-return(
+  const openModal = (imageSrc) => {
+    setModalImage(imageSrc);
+  };
+
+  const closeModal = () => {
+    setModalImage(null);
+  };
+
+  return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-       {/*Toro mecanico*/}
-      <div className="border-gray-200 rounded-lg shadow bg-gray-100">
-        <Swiper         
-          pagination={{
-            type: 'fraction',
-          }}
+      {/* Toro mecánico */}
+      <div className=" rounded-lg shadow bg-gray-100">
+        <Swiper
+          pagination={{ type: 'fraction' }}
           navigation={true}
           modules={[Pagination, Navigation]}
-          className="mySwiper">
-        <SwiperSlide>
+          className="mySwiper"
+        >
+          <SwiperSlide>
             <img
               src="/img/2.webp"
               alt="Juego Inflable"
               onClick={() => openModal('/img/2.webp')}
             />
           </SwiperSlide>
-        <SwiperSlide>
+          <SwiperSlide>
             <img
               src="/img/2.1.webp"
               alt="Juego Inflable"
               onClick={() => openModal('/img/2.1.webp')}
             />
           </SwiperSlide>
-            
+          <SwiperSlide>
+            <img
+              src="/img/2.2.webp"
+              alt="Juego Inflable"
+              onClick={() => openModal('/img/2.2.webp')}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="/img/2.3.webp"
+              alt="Juego Inflable"
+              onClick={() => openModal('/img/2.3.webp')}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="/img/2.4.webp"
+              alt="Juego Inflable"
+              onClick={() => openModal('/img/2.4.webp')}
+            />
+          </SwiperSlide>
         </Swiper>
-      
-        
         <div className="p-5">
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-700">Toro Mecánico</h5>
-          <p className="mb-3 text-2xl font-semibold  text-gray-700">Arriendo: $120.000</p>
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-neutral-900">Toro Mecánico</h5>
+          <p className="mb-3 text-2xl font-bold text-neutral-900">Arriendo: $150.000</p>
+          
         </div>
       </div>
 
-      {/*Pirata*/}
-      <div className="border-gray-200 rounded-lg shadow bg-gray-100">
-      <Swiper         
-          pagination={{
-            type: 'fraction',
-          }}
+      {/* Pirata */}
+      <div className=" rounded-lg shadow bg-gray-100">
+        <Swiper
+          pagination={{ type: 'fraction' }}
           navigation={true}
           modules={[Pagination, Navigation]}
-          className="mySwiper">
-        <SwiperSlide>
+          className="mySwiper"
+        >
+          <SwiperSlide>
             <img
               src="/img/3.webp"
               alt="Juego Inflable"
               onClick={() => openModal('/img/3.webp')}
             />
           </SwiperSlide>
-        <SwiperSlide>
+          <SwiperSlide>
             <img
               src="/img/3.1.webp"
               alt="Juego Inflable"
               onClick={() => openModal('/img/3.1.webp')}
             />
           </SwiperSlide>
-            
+          <SwiperSlide>
+            <img
+              src="/img/3.2.webp"
+              alt="Juego Inflable"
+              onClick={() => openModal('/img/3.2.webp')}
+            />
+          </SwiperSlide>
         </Swiper>
-        
-          
-          <div className="p-5">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-700">Juego Inflable El Pirata</h5>
-            <p className="mb-3 text-2xl font-semibold text-gray-700">Arriendo: $45.000</p>
-          </div>
+        <div className="p-5">
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-neutral-900">Juego Inflable El Pirata</h5>
+          <p className="mb-3 text-2xl font-semibold text-neutral-900">Arriendo: $50.000</p>
+        </div>
       </div>
 
-      {/*Juegos Pequeños*/}
-      <div className="border-gray-200 rounded-lg shadow bg-gray-100">
-      <Swiper         
-          pagination={{
-            type: 'fraction',
-          }}
+      {/* Juegos Pequeños */}
+      <div className=" rounded-lg shadow bg-gray-100">
+        <Swiper
+          pagination={{ type: 'fraction' }}
           navigation={true}
           modules={[Pagination, Navigation]}
-          className="mySwiper">
-        <SwiperSlide>
+          className="mySwiper"
+        >
+          <SwiperSlide>
             <img
               src="/img/4.webp"
               alt="Juego Inflable"
               onClick={() => openModal('/img/4.webp')}
             />
           </SwiperSlide>
-        <SwiperSlide>
+          <SwiperSlide>
             <img
               src="/img/4.1.webp"
               alt="Juego Inflable"
               onClick={() => openModal('/img/4.1.webp')}
             />
           </SwiperSlide>
-            
         </Swiper>
-        
-          
-          <div className="p-5">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-700">Juegos Inflables Pequeños</h5>
-            <p className="mb-3 text-2xl font-semibold text-gray-700">Arriendo: $30.000 c/u</p>
-          </div>
+        <div className="p-5">
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-neutral-900">Juegos Inflables Pequeños</h5>
+          <p className="mb-3 text-2xl font-semibold text-neutral-900">Arriendo: $30.000 c/u</p>
+        </div>
       </div>
 
-      {/*Ola*/}
-      <div className="border-gray-200 rounded-lg shadow bg-gray-100">
-      <Swiper         
-          pagination={{
-            type: 'fraction',
-          }}
+      {/* Ola */}
+      <div className=" rounded-lg shadow bg-gray-100">
+        <Swiper
+          pagination={{ type: 'fraction' }}
           navigation={true}
           modules={[Pagination, Navigation]}
-          className="mySwiper">
-        <SwiperSlide>
+          className="mySwiper"
+        >
+          <SwiperSlide>
             <img
               src="/img/5.webp"
               alt="Juego Inflable"
               onClick={() => openModal('/img/5.webp')}
             />
           </SwiperSlide>
-        <SwiperSlide>
+          <SwiperSlide>
             <img
               src="/img/5.1.webp"
               alt="Juego Inflable"
               onClick={() => openModal('/img/5.1.webp')}
             />
           </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="/img/5.2.webp"
-            alt="Juego Inflable"
-            onClick={() => openModal('/img/5.2.webp')}
-          />
-        </SwiperSlide>
-            
+          <SwiperSlide>
+            <img
+              src="/img/5.2.webp"
+              alt="Juego Inflable"
+              onClick={() => openModal('/img/5.2.webp')}
+            />
+          </SwiperSlide>
         </Swiper>
-        
-          
-          <div className="p-5">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-700">Juego Inflable La Ola</h5>
-            <p className="mb-3 text-2xl font-semibold text-gray-700 ">Arriendo: $60.000</p>
-          </div>
+        <div className="p-5">
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-neutral-900">Juego Inflable La Ola</h5>
+          <p className="mb-3 text-2xl font-semibold text-neutral-900 ">Arriendo: $60.000</p>
+        </div>
       </div>
 
-      {/*Tiburon*/}
-      <div className="border-gray-200 rounded-lg shadow bg-gray-100">
-      <Swiper         
-          pagination={{
-            type: 'fraction',
-          }}
+      {/* Tiburón */}
+      <div className=" rounded-lg shadow bg-gray-100">
+        <Swiper
+          pagination={{ type: 'fraction' }}
           navigation={true}
           modules={[Pagination, Navigation]}
-          className="mySwiper">
-        <SwiperSlide>
+          className="mySwiper"
+        >
+          <SwiperSlide>
             <img
               src="/img/6.webp"
               alt="Juego Inflable"
               onClick={() => openModal('/img/6.webp')}
             />
           </SwiperSlide>
-        <SwiperSlide>
+          <SwiperSlide>
             <img
               src="/img/6.1.webp"
               alt="Juego Inflable"
               onClick={() => openModal('/img/6.1.webp')}
             />
           </SwiperSlide>
-            
+          <SwiperSlide>
+            <img
+              src="/img/6.2.webp"
+              alt="Juego Inflable"
+              onClick={() => openModal('/img/6.2.webp')}
+            />
+          </SwiperSlide>
         </Swiper>
-        
-          
-          <div className="p-5">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-700">Juego Inflable El Tiburon</h5>
-            <p className="mb-3 text-2xl font-semibold text-gray-700">Arriendo: $60.000</p>
-          </div>
+        <div className="p-5">
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-neutral-900">Juego Inflable El Tiburón</h5>
+          <p className="mb-3 text-2xl font-semibold text-neutral-900">Arriendo: $60.000</p>
+        </div>
       </div>
 
-      {/*Barco*/}
-      <div className="border-gray-200 rounded-lg shadow bg-gray-100">
-      <Swiper         
-          pagination={{
-            type: 'fraction',
-          }}
+      {/* Barco */}
+      <div className=" rounded-lg shadow bg-gray-100">
+        <Swiper
+          pagination={{ type: 'fraction' }}
           navigation={true}
           modules={[Pagination, Navigation]}
-          className="mySwiper">
-        <SwiperSlide>
+          className="mySwiper"
+        >
+          <SwiperSlide>
             <img
               src="/img/7.webp"
               alt="Juego Inflable"
               onClick={() => openModal('/img/7.webp')}
             />
           </SwiperSlide>
-        <SwiperSlide>
+          <SwiperSlide>
             <img
               src="/img/7.1.webp"
               alt="Juego Inflable"
               onClick={() => openModal('/img/7.1.webp')}
             />
           </SwiperSlide>
-            
         </Swiper>
-        
-          
-          <div className="p-5">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-700">Juego Inflable El Barco</h5>
-            <p className="mb-3 text-2xl font-semibold text-gray-700">Arriendo: $55.000</p>
-          </div>
+        <div className="p-5">
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-neutral-900">Juego Inflable El Barco</h5>
+          <p className="mb-3 text-2xl font-semibold text-neutral-900">Arriendo: $55.000</p>
+        </div>
       </div>
 
-      {/*Avion*/}
-      <div className="border-gray-200 rounded-lg shadow bg-gray-100">
-        <Swiper         
-          pagination={{
-            type: 'fraction',
-          }}
+      {/* Avion */}
+      <div className=" rounded-lg shadow bg-gray-100">
+        <Swiper
+          pagination={{ type: 'fraction' }}
           navigation={true}
           modules={[Pagination, Navigation]}
-          className="mySwiper">
-        <SwiperSlide>
+          className="mySwiper"
+        >
+          <SwiperSlide>
             <img
               src="/img/8.webp"
               alt="Juego Inflable"
               onClick={() => openModal('/img/8.webp')}
             />
           </SwiperSlide>
-            
+          <SwiperSlide>
+            <img
+              src="/img/8.1.webp"
+              alt="Juego Inflable"
+              onClick={() => openModal('/img/8.1.webp')}
+            />
+          </SwiperSlide>
         </Swiper>
-        
-          
-          <div className="p-5">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-700">Juego Inflable El Avión</h5>
-            <p className="mb-3 text-2xl font-semibold text-gray-700">Arriendo: $55.000</p>
-          </div>
+        <div className="p-5">
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-neutral-900">Juego Inflable El Avión</h5>
+          <p className="mb-3 text-2xl font-semibold text-neutral-900">Arriendo: $60.000</p>
+        </div>
       </div>
 
-      {/*Castillo*/}
-      <div className="border-gray-200 rounded-lg shadow bg-gray-100">
-        <Swiper         
-            pagination={{
-                type: 'fraction',
-            }}
-            navigation={true}
-            modules={[Pagination, Navigation]}
-            className="mySwiper">
-            <SwiperSlide>
-                <img
-                src="/img/9.webp"
-                alt="Juego Inflable"
-                onClick={() => openModal('/img/9.webp')}
-                />
-            </SwiperSlide>
-                
-            </Swiper>
-        
-          
-          <div className="p-5">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-700">Juego Inflable El Castillo</h5>
-            <p className="mb-3 text-2xl font-semibold text-gray-700">Arriendo: $50.000</p>
-          </div>
-      </div>
-
-      {/*Arabe*/}
-      <div className="border-gray-200 rounded-lg shadow bg-gray-100">
-      <Swiper         
-          pagination={{
-            type: 'fraction',
-          }}
+      {/* Castillo */}
+      <div className=" rounded-lg shadow bg-gray-100">
+        <Swiper
+          pagination={{ type: 'fraction' }}
           navigation={true}
           modules={[Pagination, Navigation]}
-          className="mySwiper">
-        <SwiperSlide>
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <img
+              src="/img/9.webp"
+              alt="Juego Inflable"
+              onClick={() => openModal('/img/9.webp')}
+            />
+          </SwiperSlide>
+        </Swiper>
+        <div className="p-5">
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-neutral-900">Juego Inflable El Castillo</h5>
+          <p className="mb-3 text-2xl font-semibold text-neutral-900">Arriendo: $55.000</p>
+        </div>
+      </div>
+
+      {/* Aro */}
+      <div className=" rounded-lg shadow bg-gray-100">
+        <Swiper
+          pagination={{ type: 'fraction' }}
+          navigation={true}
+          modules={[Pagination, Navigation]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
             <img
               src="/img/10.webp"
               alt="Juego Inflable"
               onClick={() => openModal('/img/10.webp')}
             />
           </SwiperSlide>
-        <SwiperSlide>
+          <SwiperSlide>
             <img
               src="/img/10.1.webp"
               alt="Juego Inflable"
               onClick={() => openModal('/img/10.1.webp')}
             />
           </SwiperSlide>
-            
-        </Swiper>
-        
-          
-          <div className="p-5">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-700">Juego Inflable Aro</h5>
-            <p className="mb-3 text-2xl font-semibold text-gray-700">Arriendo: $55.000</p>
-          </div>
-      </div>
-
-      {/*Arco*/}
-      <div className="border-gray-200 rounded-lg shadow bg-gray-100">
-      <Swiper         
-          pagination={{
-            type: 'fraction',
-          }}
-          navigation={true}
-          modules={[Pagination, Navigation]}
-          className="mySwiper">
-        <SwiperSlide>
+          <SwiperSlide>
             <img
-              src="/img/11.jpg"
+              src="/img/10.2.webp"
               alt="Juego Inflable"
-              onClick={() => openModal('/img/11.jpg')}
+              onClick={() => openModal('/img/10.2.webp')}
             />
           </SwiperSlide>
         </Swiper>
-          <div className="p-5">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-700">Juego Inflable Arabe</h5>
-            <p className="mb-3 text-2xl font-semibold text-gray-700">Arriendo: $50.000</p>
-          </div>
+        <div className="p-5">
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-neutral-900">Juego Inflable Aro</h5>
+          <p className="mb-3 text-2xl font-semibold text-neutral-900">Arriendo: $55.000</p>
+        </div>
       </div>
-      {modalImage && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50">
-          <div className="relative max-w-full max-h-full overflow-auto">
+
+      {/* Arabe */}
+      <div className=" rounded-b-lg shadow bg-gray-100">
+        <Swiper
+          pagination={{ type: 'fraction' }}
+          navigation={true}
+          modules={[Pagination, Navigation]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
             <img
-              src={modalImage}
+              src="/img/11.webp"
               alt="Juego Inflable"
-              className="mx-auto max-h-screen max-w-screen p-4"
+              onClick={() => openModal('/img/11.webp')}
             />
-            <button className="m-2 text-white" onClick={closeModal}>
-              Cerrar
-            </button>
+          </SwiperSlide>
+        </Swiper>
+        <div className="p-5">
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-neutral-900">Juego Inflable Arabe</h5>
+          <p className="mb-3 text-2xl font-semibold text-neutral-900">Arriendo: $55.000</p>
+        </div>
+      </div>
+
+       {/* Vaquero */}
+       <div className=" rounded-b-lg shadow bg-gray-100">
+        <Swiper
+          pagination={{ type: 'fraction' }}
+          navigation={true}
+          modules={[Pagination, Navigation]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <img
+              src="/img/12.webp"
+              alt="Juego Inflable"
+              onClick={() => openModal('/img/12.webp')}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="/img/12.1.webp"
+              alt="Juego Inflable"
+              onClick={() => openModal('/img/12.webp')}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="/img/12.3.webp"
+              alt="Juego Inflable"
+              onClick={() => openModal('/img/12.webp')}
+            />
+          </SwiperSlide>
+        </Swiper>
+        <div className="p-5">
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-neutral-900">Juego Inflable Vaquero</h5>
+          <p className="mb-3 text-2xl font-semibold text-neutral-900">Arriendo: $60.000</p>
+        </div>
+      </div>
+
+      {modalImage && (
+        <div className="modal" onClick={closeModal}>
+          <span className="close" onClick={closeModal}>&times;</span>
+          <div className="modal-content">
+            <img src={modalImage} alt="Juego Inflable"  className='lg:min-w-[400px] lg:min-h-[400px] object-contain'/>
           </div>
         </div>
       )}
     </div>
   );
-} 
-export default Juegos 
-    
+}
+
+export default Juegos;
