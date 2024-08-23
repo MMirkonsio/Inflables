@@ -313,7 +313,7 @@ function Juegos() {
       {cart.length > 0 && (
         <button
           onClick={openCartModal}
-          className="fixed bottom-4 right-4 bg-green-500 text-white p-3 rounded-full shadow-lg flex items-center justify-center"
+          className="fixed bottom-4 z-50 right-4 bg-green-500 text-white p-3 rounded-full shadow-lg flex items-center justify-center"
         >
           <FiShoppingCart className="h-8 w-8" />
           <span className="absolute top-0 right-0 bg-red-500 text-white rounded-full text-xs px-2 py-1">
