@@ -253,3 +253,6 @@ img, video{
   cursor: pointer;
   z-index: 10000; /* Asegura que el botón esté por encima del contenido del modal */
 }
+.hide-during-capture {
+  visibility: hidden;
+}

@@ -1,6 +1,6 @@
-import "./styles.css";
-import Juegos from "./juegos";
-import Contacto from "./contacto";
+import "./assets/styles.css";
+import Juegos from "./components/juegos";
+import Contacto from "./components/contacto";
 
 function App() {
   return (
