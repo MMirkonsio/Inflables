@@ -5,8 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
-import { FiShoppingCart, FiX, FiDownload  } from "react-icons/fi";
-import { HiPencilSquare } from "react-icons/hi2";
+import { FiShoppingCart, FiDownload  } from "react-icons/fi";
 import html2canvas from "html2canvas";
 
 function Juegos() {
@@ -14,7 +13,6 @@ function Juegos() {
   const [currentImageIndex, setCurrentImageIndex] = useState(null);
   const [cart, setCart] = useState([]);
   const [isCartModalOpen, setIsCartModalOpen] = useState(false);
-  const [isEditingList, setIsEditingList] = useState(false);
   const [isCapturing, setIsCapturing] = useState(false);
 
   const openModal = (images, index) => {
@@ -33,7 +31,6 @@ function Juegos() {
 
   const closeCartModal = () => {
     setIsCartModalOpen(false);
-    setIsEditingList(false); // Reset editing mode when closing the modal
   };
 
   const addToCart = (juego) => {
@@ -45,14 +42,9 @@ function Juegos() {
     }
   };
 
-  const removeFromCart = (title) => {
-    setCart(cart.filter((item) => item.title !== title));
-  };
-
   useEffect(() => {
     if (cart.length === 0) {
       setIsCartModalOpen(false);
-      setIsEditingList(false); // Asegúrate de también resetear el modo de edición si es necesario
     }
   }, [cart]);
 
@@ -247,14 +239,6 @@ function Juegos() {
                       className="mb-2 bg-neutral-100 p-2 rounded-lg font-semibold relative w-[350px]"
                     >
                       {item.title} - ${item.price}
-                      {isEditingList && (
-                        <button
-                          onClick={() => removeFromCart(item.title)}
-                          className="absolute top-1 right-0 p-1 text-red-500"
-                        >
-                          <FiX className="h-6 w-6" />
-                        </button>
-                      )}
                     </li>
                   ))}
                   <div className="text-xl font-bold">
@@ -279,19 +263,7 @@ function Juegos() {
                 ><FiDownload className="mr-2"/>
                   Descargar lista
                 </button>
-                <button
-                  onClick={() => setIsEditingList(!isEditingList)}
-                  className={`p-2 rounded-xl text-sm font-bold flex items-center ${
-                    isCapturing ? "hide-during-capture" : ""
-                  } ${
-                    isEditingList
-                      ? "bg-neutral-500 text-neutral-100"
-                      : "bg-neutral-900 text-neutral-100"
-                  }`}
-                >
-                  <HiPencilSquare className="mr-2" />
-                  {isEditingList ? "Finalizar edición" : "Editar lista"}
-                </button>
+               
 
                 <button
                   onClick={closeCartModal}
