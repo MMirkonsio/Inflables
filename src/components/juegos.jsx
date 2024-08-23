@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "../assets/styles.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -48,6 +48,13 @@ function Juegos() {
   const removeFromCart = (title) => {
     setCart(cart.filter((item) => item.title !== title));
   };
+
+  useEffect(() => {
+    if (cart.length === 0) {
+      setIsCartModalOpen(false);
+      setIsEditingList(false); // Asegúrate de también resetear el modo de edición si es necesario
+    }
+  }, [cart]);
 
   const shareList = async () => {
     setIsCapturing(true);
@@ -302,17 +309,18 @@ function Juegos() {
         )}
       </div>
 
-      <div
-        className="fixed bottom-4 right-4 z-50 cursor-pointer"
-        onClick={openCartModal}
-      >
-        <FiShoppingCart className="lg:text-6xl text-7xl bg-green-500 text-neutral-100 px-3 rounded-full" />
-        {cart.length > 0 && (
-          <span className="absolute top-0 right-0 rounded-full bg-red-500 text-white text-sm font-bold px-2 py-1">
+      {/* Icono del carrito */}
+      {cart.length > 0 && (
+        <button
+          onClick={openCartModal}
+          className="fixed bottom-4 right-4 bg-green-500 text-white p-3 rounded-full shadow-lg flex items-center justify-center"
+        >
+          <FiShoppingCart className="h-8 w-8" />
+          <span className="absolute top-0 right-0 bg-red-500 text-white rounded-full text-xs px-2 py-1">
             {cart.length}
           </span>
-        )}
-      </div>
+        </button>
+      )}
     </div>
   );
 }
