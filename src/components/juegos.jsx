@@ -108,12 +108,12 @@ function Juegos() {
     },
     {
       title: "Juego Inflable La Ola",
-      price: "60.000",
+      price: "65.000",
       images: ["/img/5.webp", "/img/5.1.webp", "/img/5.2.webp"],
     },
     {
       title: "Juego Inflable El Tiburón",
-      price: "60.000",
+      price: "65.000",
       images: ["/img/6.webp", "/img/6.1.webp", "/img/6.2.webp"],
     },
     {
@@ -123,7 +123,7 @@ function Juegos() {
     },
     {
       title: "Juego Inflable El Avión",
-      price: "60.000",
+      price: "65.000",
       images: ["/img/8.webp", "/img/8.1.webp", "/img/8.2.webp"],
     },
     {
